@@ -54,4 +54,8 @@ export class CoinbasePrimeClient extends CoinbaseClient {
       };
     });
   }
+
+  getDefaultPaginationLimit(): number {
+    return DEFAULT_PAGINATION_LIMIT;
+  }
 }

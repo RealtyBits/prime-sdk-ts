@@ -17,4 +17,5 @@ import { CoinbaseClient, CoinbaseHttpClientRetryOptions } from '@coinbase-sample
 import { CoinbasePrimeCredentials } from './credentials';
 export declare class CoinbasePrimeClient extends CoinbaseClient {
     constructor(credentials?: CoinbasePrimeCredentials, apiBasePath?: string, options?: CoinbaseHttpClientRetryOptions);
+    getDefaultPaginationLimit(): number;
 }

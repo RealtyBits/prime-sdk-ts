@@ -32,5 +32,8 @@ class CoinbasePrimeClient extends core_ts_1.CoinbaseClient {
             return Object.assign(Object.assign({}, response), { data: (0, toCamelCase_1.toCamelCase)(response.data) });
         });
     }
+    getDefaultPaginationLimit() {
+        return constants_1.DEFAULT_PAGINATION_LIMIT;
+    }
 }
 exports.CoinbasePrimeClient = CoinbasePrimeClient;
