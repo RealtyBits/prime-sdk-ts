@@ -80,7 +80,7 @@ class TransactionsService {
         return __awaiter(this, void 0, void 0, function* () {
             const bodyParams = Object.assign(Object.assign({}, request), { portfolioId: undefined, walletId: undefined });
             const response = yield this.client.request({
-                url: `portfolios/${request.portfolioId}/wallets/${request.walletId}/conversions`,
+                url: `portfolios/${request.portfolioId}/wallets/${request.walletId}/conversion`,
                 bodyParams,
                 method: core_ts_1.Method.POST,
                 callOptions: options,
